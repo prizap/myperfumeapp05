@@ -86,7 +86,7 @@ def build_single_df(top_notes, mid_notes, base_notes, brand, concentrate, gender
 # Sidebar: model load
 # ---------------------------
 st.sidebar.header("Model")
-default_model_path = "full_pipeline_situation_model.joblib"
+default_model_path = "full_pipeline_situation_modelv2.joblib"
 model_path = st.sidebar.text_input("Model path (.joblib)", value=default_model_path)
 uploaded_model = st.sidebar.file_uploader("Or upload pipeline (.joblib)", type=["joblib","pkl"])
 show_prob = st.sidebar.checkbox("Show prediction probabilities (if available)", value=True)
